@@ -133,5 +133,5 @@ var searchData=
   ['fromarchivestringxml_130',['fromArchiveStringXML',['../d0/dc2/structtesseract__common_1_1Serialization.html#a643e19fe172d0dbd2b8a5d8c623dabe9',1,'tesseract_common::Serialization']]],
   ['fromrpy_131',['fromRPY',['../d6/ddf/tesseract__urdf__origin__unit_8cpp.html#ab28306a9dd4a55cca7d941ec37299696',1,'tesseract_urdf_origin_unit.cpp']]],
   ['fromyamlstring_132',['fromYAMLString',['../df/da9/namespacetesseract__common.html#ac8f354484775381dd5c207ee0dfe21f2',1,'tesseract_common']]],
-  ['front_133',['front',['../d5/d28/structtesseract__common_1_1JointTrajectory.html#a4a480812e5c73e674a1b62a4c5498726',1,'tesseract_common::JointTrajectory::front()'],['../d5/d28/structtesseract__common_1_1JointTrajectory.html#a50a15c5ac48e6b2122244d4f4ad4362a',1,'tesseract_common::JointTrajectory::front() const']]]
+  ['front_133',['front',['../da/d05/classtesseract__common_1_1JointTrajectory.html#a4a480812e5c73e674a1b62a4c5498726',1,'tesseract_common::JointTrajectory::front()'],['../da/d05/classtesseract__common_1_1JointTrajectory.html#a50a15c5ac48e6b2122244d4f4ad4362a',1,'tesseract_common::JointTrajectory::front() const']]]
 ];

@@ -222,7 +222,8 @@ var menudata={children:[
 {text:"y",url:"functions_vars_y.html#index_y"},
 {text:"z",url:"functions_vars_z.html#index_z"}]},
 {text:"Typedefs",url:"functions_type.html",children:[
-{text:"c",url:"functions_type.html#index_c"},
+{text:"b",url:"functions_type.html#index_b"},
+{text:"c",url:"functions_type_c.html#index_c"},
 {text:"d",url:"functions_type_d.html#index_d"},
 {text:"e",url:"functions_type_e.html#index_e"},
 {text:"g",url:"functions_type_g.html#index_g"},
