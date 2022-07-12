@@ -55,7 +55,7 @@
 \DoxyCodeLine{89                   std::move(mesh\_textures),}
 \DoxyCodeLine{90                   \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feb}{GeometryType}}::\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febad452813d26ea6530df4492e3ad9f230c}{MESH}})}
 \DoxyCodeLine{91   \{}
-\DoxyCodeLine{92     \textcolor{keywordflow}{if} ((getFaceCount() * 4) != getFaces()-\/>size())}
+\DoxyCodeLine{92     \textcolor{keywordflow}{if} ((\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{long}\textcolor{keyword}{>}(getFaceCount()) * 4) != getFaces()-\/>size())}
 \DoxyCodeLine{93       std::throw\_with\_nested(std::runtime\_error(\textcolor{stringliteral}{"{}Mesh is not triangular"{}}));  \textcolor{comment}{// LCOV\_EXCL\_LINE}}
 \DoxyCodeLine{94   \}}
 \DoxyCodeLine{95 }
@@ -79,7 +79,7 @@
 \DoxyCodeLine{128                   std::move(mesh\_textures),}
 \DoxyCodeLine{129                   \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feb}{GeometryType}}::\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febad452813d26ea6530df4492e3ad9f230c}{MESH}})}
 \DoxyCodeLine{130   \{}
-\DoxyCodeLine{131     \textcolor{keywordflow}{if} ((getFaceCount() * 4) != getFaces()-\/>size())}
+\DoxyCodeLine{131     \textcolor{keywordflow}{if} ((\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{long}\textcolor{keyword}{>}(getFaceCount()) * 4) != getFaces()-\/>size())}
 \DoxyCodeLine{132       std::throw\_with\_nested(std::runtime\_error(\textcolor{stringliteral}{"{}Mesh is not triangular"{}}));  \textcolor{comment}{// LCOV\_EXCL\_LINE}}
 \DoxyCodeLine{133   \}}
 \DoxyCodeLine{134 }

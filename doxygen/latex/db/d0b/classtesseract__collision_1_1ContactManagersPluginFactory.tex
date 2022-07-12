@@ -39,10 +39,14 @@ void \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_
 \begin{DoxyCompactList}\small\item\em Add location for the plugin loader to search. \end{DoxyCompactList}\item 
 std\+::set$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_abba279cdeb75c502c70b6b31af3d993b}{get\+Search\+Paths}} () const
 \begin{DoxyCompactList}\small\item\em Get the plugin search paths. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_a80035ba3dcd3d2fe34a71c7459bc302b}{clear\+Search\+Paths}} ()
+\begin{DoxyCompactList}\small\item\em Clear the search paths. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_ab465759ee4c5838e7be164958c5f163e}{add\+Search\+Library}} (const std\+::string \&library\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Add a library to search for plugin name. \end{DoxyCompactList}\item 
 std\+::set$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_ad3d350dd95449f85bbe57c7ddd07d234}{get\+Search\+Libraries}} () const
 \begin{DoxyCompactList}\small\item\em Get the plugin search libraries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_a77596799af7ea33dc2486351e8f230d5}{clear\+Search\+Libraries}} ()
+\begin{DoxyCompactList}\small\item\em Clean the search libraries. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_a401c5843b914e25d663d7c682ae7dc80}{add\+Discrete\+Contact\+Manager\+Plugin}} (const std\+::string \&name, \mbox{\hyperlink{structtesseract__common_1_1PluginInfo}{tesseract\+\_\+common\+::\+Plugin\+Info}} plugin\+\_\+info)
 \begin{DoxyCompactList}\small\item\em Add a discrete contact manager plugin. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__collision_1_1ContactManagersPluginFactory_a61b8caba5438c15abd7d472822efcd0c}{has\+Discrete\+Contact\+Manager\+Plugins}} () const
@@ -231,6 +235,26 @@ Add location for the plugin loader to search.
 {\em path} & The full path to the directory \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classtesseract__collision_1_1ContactManagersPluginFactory_a77596799af7ea33dc2486351e8f230d5}\label{classtesseract__collision_1_1ContactManagersPluginFactory_a77596799af7ea33dc2486351e8f230d5}} 
+\index{tesseract\_collision::ContactManagersPluginFactory@{tesseract\_collision::ContactManagersPluginFactory}!clearSearchLibraries@{clearSearchLibraries}}
+\index{clearSearchLibraries@{clearSearchLibraries}!tesseract\_collision::ContactManagersPluginFactory@{tesseract\_collision::ContactManagersPluginFactory}}
+\doxysubsubsection{\texorpdfstring{clearSearchLibraries()}{clearSearchLibraries()}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::\+Contact\+Managers\+Plugin\+Factory\+::clear\+Search\+Libraries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clean the search libraries. 
+
+\mbox{\Hypertarget{classtesseract__collision_1_1ContactManagersPluginFactory_a80035ba3dcd3d2fe34a71c7459bc302b}\label{classtesseract__collision_1_1ContactManagersPluginFactory_a80035ba3dcd3d2fe34a71c7459bc302b}} 
+\index{tesseract\_collision::ContactManagersPluginFactory@{tesseract\_collision::ContactManagersPluginFactory}!clearSearchPaths@{clearSearchPaths}}
+\index{clearSearchPaths@{clearSearchPaths}!tesseract\_collision::ContactManagersPluginFactory@{tesseract\_collision::ContactManagersPluginFactory}}
+\doxysubsubsection{\texorpdfstring{clearSearchPaths()}{clearSearchPaths()}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::\+Contact\+Managers\+Plugin\+Factory\+::clear\+Search\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the search paths. 
+
 \mbox{\Hypertarget{classtesseract__collision_1_1ContactManagersPluginFactory_aff83c1c5fd091d2a2efb281af2401c9d}\label{classtesseract__collision_1_1ContactManagersPluginFactory_aff83c1c5fd091d2a2efb281af2401c9d}} 
 \index{tesseract\_collision::ContactManagersPluginFactory@{tesseract\_collision::ContactManagersPluginFactory}!createContinuousContactManager@{createContinuousContactManager}}
 \index{createContinuousContactManager@{createContinuousContactManager}!tesseract\_collision::ContactManagersPluginFactory@{tesseract\_collision::ContactManagersPluginFactory}}

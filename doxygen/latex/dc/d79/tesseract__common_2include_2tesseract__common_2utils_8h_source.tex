@@ -42,7 +42,7 @@
 \DoxyCodeLine{64   \textcolor{keyword}{auto} size = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(size\_s);}
 \DoxyCodeLine{65   \textcolor{keyword}{auto} buf = std::make\_unique<char[]>(size);  \textcolor{comment}{// NOLINT}}
 \DoxyCodeLine{66   std::snprintf(buf.get(), size, format.c\_str(), args...);}
-\DoxyCodeLine{67   \textcolor{keywordflow}{return} std::string(buf.get(), buf.get() + size -\/ 1);  \textcolor{comment}{// We don't want the '\(\backslash\)0' inside}}
+\DoxyCodeLine{67   \textcolor{keywordflow}{return} std::string\{ buf.get(), buf.get() + size -\/ 1 \};  \textcolor{comment}{// We don't want the '\(\backslash\)0' inside}}
 \DoxyCodeLine{68 \}}
 \DoxyCodeLine{69 }
 \DoxyCodeLine{76 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacetesseract__common_a4ed12ea384452e2d5d4f7a0854035384}{twistChangeRefPoint}}(Eigen::Ref<Eigen::VectorXd> twist, \textcolor{keyword}{const} Eigen::Ref<const Eigen::Vector3d>\& ref\_point);}

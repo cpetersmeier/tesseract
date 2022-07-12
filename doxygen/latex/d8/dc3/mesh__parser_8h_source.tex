@@ -438,14 +438,14 @@
 \DoxyCodeLine{476   \textcolor{comment}{// And have it read the given file with some post-\/processing}}
 \DoxyCodeLine{477   \textcolor{keyword}{const} aiScene* scene = \textcolor{keyword}{nullptr};}
 \DoxyCodeLine{478   \textcolor{keywordflow}{if} (triangulate)}
-\DoxyCodeLine{479     scene = importer.ReadFileFromMemory(\&data[0],}
+\DoxyCodeLine{479     scene = importer.ReadFileFromMemory(data.data(),}
 \DoxyCodeLine{480                                         data.size(),}
 \DoxyCodeLine{481                                         aiProcess\_Triangulate | aiProcess\_JoinIdenticalVertices |}
 \DoxyCodeLine{482                                             aiProcess\_SortByPType | aiProcess\_RemoveComponent,}
 \DoxyCodeLine{483                                         hint);}
 \DoxyCodeLine{484   \textcolor{keywordflow}{else}}
 \DoxyCodeLine{485     scene =}
-\DoxyCodeLine{486         importer.ReadFileFromMemory(\&data[0],}
+\DoxyCodeLine{486         importer.ReadFileFromMemory(data.data(),}
 \DoxyCodeLine{487                                     data.size(),}
 \DoxyCodeLine{488                                     aiProcess\_JoinIdenticalVertices | aiProcess\_SortByPType | aiProcess\_RemoveComponent,}
 \DoxyCodeLine{489                                     hint);}

@@ -46,10 +46,17 @@
 \DoxyCodeLine{120 }
 \DoxyCodeLine{121 \textcolor{preprocessor}{\#define TESSERACT\_ADD\_PLUGIN(DERIVED\_CLASS, ALIAS)                                                                     \(\backslash\)}}
 \DoxyCodeLine{122 \textcolor{preprocessor}{  TESSERACT\_ADD\_PLUGIN\_SECTIONED(DERIVED\_CLASS, ALIAS, boostdll)}}
-\DoxyCodeLine{123 \textcolor{comment}{// clang-\/format on}}
-\DoxyCodeLine{124 }
-\DoxyCodeLine{125 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{class__loader_8hpp}{tesseract\_common/class\_loader.hpp}}>}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \textcolor{preprocessor}{\#define TESSERACT\_PLUGIN\_ANCHOR\_DECL(ANCHOR\_NAME) \(\backslash\)}}
+\DoxyCodeLine{125 \textcolor{preprocessor}{  const void* ANCHOR\_NAME(); }\textcolor{comment}{// NOLINT}}
 \DoxyCodeLine{126 }
-\DoxyCodeLine{127 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// TESSERACT\_COMMON\_CLASS\_LOADER\_H}}
+\DoxyCodeLine{127 \textcolor{preprocessor}{\#define TESSERACT\_PLUGIN\_ANCHOR\_IMPL(ANCHOR\_NAME) \(\backslash\)}}
+\DoxyCodeLine{128 \textcolor{preprocessor}{  const void* ANCHOR\_NAME() \{ return (const void*)(\&ANCHOR\_NAME); \} }\textcolor{comment}{// NOLINT}}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 \textcolor{comment}{// clang-\/format on}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{class__loader_8hpp}{tesseract\_common/class\_loader.hpp}}>}}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// TESSERACT\_COMMON\_CLASS\_LOADER\_H}}
 
 \end{DoxyCode}
