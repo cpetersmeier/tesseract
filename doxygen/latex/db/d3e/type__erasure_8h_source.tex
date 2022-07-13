@@ -135,7 +135,7 @@
 \DoxyCodeLine{156   \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a54102916912aa37526ce1d65f1fabdeb}{\string~TypeErasureBase}}() = \textcolor{keywordflow}{default};}
 \DoxyCodeLine{157 }
 \DoxyCodeLine{158   \textcolor{comment}{// Copy constructor}}
-\DoxyCodeLine{159   \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a98a496576ff069d3fb6546ec131a2b5e}{TypeErasureBase}}(\textcolor{keyword}{const} \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase}{TypeErasureBase}}\& other) : \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}}(other.\mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}}-\/>clone()) \{\}}
+\DoxyCodeLine{159   \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a98a496576ff069d3fb6546ec131a2b5e}{TypeErasureBase}}(\textcolor{keyword}{const} \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase}{TypeErasureBase}}\& other) \{ \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}} = other.\mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}}-\/>clone(); \}}
 \DoxyCodeLine{160 }
 \DoxyCodeLine{161   \textcolor{comment}{// Move ctor.}}
 \DoxyCodeLine{162   \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a08989c4791c4eeeb73f107b01130d3cf}{TypeErasureBase}}(\mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase}{TypeErasureBase}}\&\& other) \textcolor{keyword}{noexcept} \{ \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}}.swap(other.value\_); \}}
@@ -164,7 +164,7 @@
 \DoxyCodeLine{185   std::type\_index \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_abb765ee3e63f4ece1103d92cff8e3239}{getType}}()\textcolor{keyword}{ const}}
 \DoxyCodeLine{186 \textcolor{keyword}{  }\{}
 \DoxyCodeLine{187     \textcolor{keywordflow}{if} (\mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}} == \textcolor{keyword}{nullptr})}
-\DoxyCodeLine{188       \textcolor{keywordflow}{return} std::type\_index\{ \textcolor{keyword}{typeid}(\textcolor{keyword}{nullptr}) \};}
+\DoxyCodeLine{188       \textcolor{keywordflow}{return} std::type\_index(\textcolor{keyword}{typeid}(\textcolor{keyword}{nullptr}));}
 \DoxyCodeLine{189 }
 \DoxyCodeLine{190     \textcolor{keywordflow}{return} \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}}-\/>getType();}
 \DoxyCodeLine{191   \}}
@@ -209,7 +209,7 @@
 \DoxyCodeLine{230     ar\& boost::serialization::make\_nvp(\textcolor{stringliteral}{"{}value"{}}, \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}});}
 \DoxyCodeLine{231   \}}
 \DoxyCodeLine{232 }
-\DoxyCodeLine{233   std::unique\_ptr<TypeErasureInterface> \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}}\{ \textcolor{keyword}{nullptr} \};}
+\DoxyCodeLine{233   std::unique\_ptr<TypeErasureInterface> \mbox{\hyperlink{structtesseract__common_1_1TypeErasureBase_a8e7c2618f744c424e83c64ca6a31f047}{value\_}};}
 \DoxyCodeLine{234 \};}
 \DoxyCodeLine{235 }
 \DoxyCodeLine{236 \}  \textcolor{comment}{// namespace tesseract\_common}}
